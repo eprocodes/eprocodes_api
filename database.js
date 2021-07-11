@@ -1,10 +1,10 @@
 var mysql = require('mysql2/promise');
 
 var config = {
-  host: '127.0.0.1', // Replace with your host name
-  user: 'mghannam',      // Replace with your database username
-  password: 'P@ssw0rd',      // Replace with your database password
-  database: 'mysql' // // Replace with your database Name
+  host: 'sql6.freemysqlhosting.net', // Replace with your host name
+  user: 'sql6424379',      // Replace with your database username
+  password: '9WeC1qfU9S',      // Replace with your database password
+  database: 'sql6424379' // // Replace with your database Name
 }
 async function query() {
   const connection = await mysql.createConnection(config);
