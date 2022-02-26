@@ -5,7 +5,7 @@ var database = require('../database.js');
 // async function getAllNews (){
  const getAllNews = async (req, res, next) => {
     const results = await database.query();
-    res.json(results);
+    res.json(results.documents);
 }
 
 module.exports = {getAllNews};
