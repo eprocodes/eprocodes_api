@@ -44,7 +44,7 @@ var config = {
 async function query(){
     await axios(config)
      .then(async function (response) {
-        result = await JSON.stringify(response.data);
+        result = await response.data;
      })
      .catch(function (error) {
          console.log(error);
