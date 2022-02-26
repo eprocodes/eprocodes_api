@@ -4,11 +4,12 @@
   "description": "eProCodes API Nodejs Package",
   "main": "Server.js",
   "dependencies": {
+    "axios": "^0.26.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
-    "nodemailer": "^6.6.2",
     "mysql2": "^2.2.5",
+    "nodemailer": "^6.6.2",
     "window": "^4.2.7"
   },
   "devDependencies": {},
