@@ -9,6 +9,6 @@ const postNewsrouter  = express.Router();
 // 2.
 const postNewsController = require('../controllers/postnews'); 
 // 3.
-postNewsrouter.get('/postnews',cors(options), postNewsController.postNews); 
+postNewsrouter.post('/postnews',cors(options), postNewsController.postNews); 
 // 4. 
 module.exports = postNewsrouter; // export to use in server.js

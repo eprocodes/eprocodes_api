@@ -19,29 +19,8 @@
 
 // Below code used to talk to mango db
 const axios = require('axios');
-
-const data = JSON.stringify({
-    "collection": "eprocodescollection",
-    "database": "eprocodes",
-    "dataSource": "Cluster0",
-    // "projection": {
-    //     "_id": 1,
-    //     "name": "monah"
-    // }
-});
             
-var config = {
-    method: 'post',
-    url: 'https://data.mongodb-api.com/app/data-iejre/endpoint/data/beta/action/find',
-    headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Request-Headers': '*',
-        'api-key': 'V13RtN9s6g6tUij3AEIesvSZ9SF2SzxzoGxYMIqg6P0Kw2qM5QIADlG6PSQzyBIn'
-    },
-    data : data
-};
-            
-async function query(){
+async function query(config){
     await axios(config)
      .then(async function (response) {
         result = await response.data;
