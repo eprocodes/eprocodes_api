@@ -8,7 +8,7 @@ const options = {
 const postNewsrouter  = express.Router(); 
 // 2.
 const postNewsController = require('../controllers/postnews'); 
-// 3.
-postNewsrouter.post('/postnews',cors(options), postNewsController.postNews); 
+// 3. Post with param
+postNewsrouter.post('/postnews/:name',cors(options), postNewsController.postNews); 
 // 4. 
 module.exports = postNewsrouter; // export to use in server.js

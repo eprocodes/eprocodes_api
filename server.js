@@ -22,6 +22,11 @@ app.use(cors(options));
 //app.use('/', newsRoute,teaRoute); //to use the routes
 app.use('/', newsRoute, getUsernamerouter, postNewsrouter); //to use the routes
 
+app.get(postNewsrouter, function(req, res) {
+  res.send(req.params.name);
+});
+
+
 const listener = app.listen(process.env.PORT || 3000, () => {
     console.log('Your app is listening on port ' + listener.address().port)
 })
