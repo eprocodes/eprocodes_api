@@ -9,14 +9,13 @@ var globalvariables = require('../globalvariables.js');
 
 const postNews = async (req, res, next) => {
 
+
     const data = JSON.stringify({
         "collection": globalvariables.global.databaseCollection,
         "database": globalvariables.global.databaseName,
         "dataSource": globalvariables.global.datasource,
         //Posted Object with param called name
-        "document": {
-            "name": req.params.name
-        }
+        "document": req.body
     });
     
     var config = {
