@@ -28,8 +28,7 @@ const login = async (req, res, next) => {
     
     // Used to call Database and Post Data
     const results = await database.query(config);
-    console.log(results);
-    res.json(results);
+    res.json(results.document);
 }
 
 
