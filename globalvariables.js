@@ -1,9 +1,11 @@
 const global = {
     databaseName : "eprocodes",
     databaseCollection : "eprocodescollection",
+    databaseLoginCollection: "Users",
     datasource : "Cluster0",
     insertOneAPI: "https://data.mongodb-api.com/app/data-iejre/endpoint/data/beta/action/insertOne",
     findAllAPI: "https://data.mongodb-api.com/app/data-iejre/endpoint/data/beta/action/find",
+    findOneAPI: "https://data.mongodb-api.com/app/data-iejre/endpoint/data/beta/action/findOne",
     headers:{
         'Content-Type': 'application/json',
         'Access-Control-Request-Headers': '*',
