@@ -11,7 +11,8 @@ const app = express();
 
 app.use(express.json());
 
-const allowedOrigins = ['http://localhost:4200'];
+const allowedOrigins = '*';
+// const allowedOrigins = ['http://localhost:8100'];
 const options = {
     origin: allowedOrigins
   };
