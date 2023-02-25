@@ -2,6 +2,7 @@ const global = {
     databaseName : "eprocodes",
     databaseCollection : "eprocodescollection",
     databaseLoginCollection: "Users",
+    databaseProjectsCollection: "Projects",
     datasource : "Cluster0",
     insertOneAPI: "https://data.mongodb-api.com/app/data-iejre/endpoint/data/beta/action/insertOne",
     findAllAPI: "https://data.mongodb-api.com/app/data-iejre/endpoint/data/beta/action/find",
